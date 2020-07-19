@@ -142,7 +142,7 @@ function App(props) {
               />
             </>
           ) : (
-            <Redirect to="/signup" />
+            <Redirect to="/" />
           )}
         </Switch>
       )}
