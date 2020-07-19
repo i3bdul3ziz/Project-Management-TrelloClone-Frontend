@@ -1,0 +1,41 @@
+@import url("https://fonts.googleapis.com/css2?family=Tajawal&display=swap");
+
+.fr-password-container {
+  display: grid;
+  place-items: center;
+  margin-top: 2.5rem;
+}
+
+.password-form-container {
+  width: 50%;
+  display: grid;
+  text-align: center;
+  border-radius: 5px;
+  background-color: white;
+}
+
+.fr-password-container2 {
+  display: grid;
+  place-items: center;
+}
+
+.password-form-title {
+  margin-bottom: 2.5rem;
+}
+
+.password-form-width {
+  width: 50%;
+}
+
+.fr-password-input {
+  border: 1px solid #8b8bcc;
+  border-bottom: 2px #8b8bcc solid;
+  border-radius: 3px;
+  margin-bottom: 1.5rem;
+  width: 100%;
+}
+.fr-password-input:focus {
+  outline: 0;
+  border: 1px solid #666;
+  border-bottom: 2px solid #666;
+}

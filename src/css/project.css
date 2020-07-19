@@ -1,0 +1,380 @@
+.listCon {
+  max-width: 120% !important;
+  overflow-x: auto;
+}
+.drag-n-drop {
+  display: inline-flex;
+  min-width: 100%;
+  overflow-x: auto;
+  height: 81vh;
+  padding: 0.5rem;
+  text-align: right;
+  align-items: start;
+}
+
+.dnd-group {
+  background-color: rgb(255, 255, 255);
+  border-radius: 5px;
+  padding: 0.5rem;
+  max-height: 100vh;
+  width: 250px;
+  margin-right: 0.5rem;
+}
+
+.dnd-item {
+  display: block;
+  max-width: 100%;
+  word-wrap: break-word;
+  padding: 2% 0.5rem 2% 0;
+  min-height: 5vh;
+  background-color: rgb(231, 231, 231);
+  border-radius: 5px;
+  color: rgb(29, 20, 145);
+}
+
+.dnd-item:not(:last-of-type) {
+  margin-bottom: 0.5rem;
+}
+
+.dnd-item * {
+  margin: 0;
+  font-size: 1.2rem;
+}
+
+.controlGroup {
+  float: left;
+  border: unset;
+  border-radius: 2.5px;
+  background: none;
+  font-size: 0.9rem;
+  margin-top: 0.4rem;
+}
+
+.controlGroup:hover {
+  background: #f0f0f0;
+  border-bottom: rgb(192, 192, 192) 2px solid;
+}
+
+.controlTask {
+  display: none;
+  float: left;
+  border: unset;
+  border-radius: 2.5px;
+  background: none;
+  font-size: 0.9rem;
+  margin-left: 0.3rem;
+  margin-top: 0.05rem;
+}
+
+.edit-task-btn-style:hover {
+  background: #dfdfdf;
+  border-bottom: rgb(59, 212, 85) 2px solid;
+}
+
+.delete-task-btn-style:hover {
+  background: #dfdfdf;
+  border-bottom: tomato 2px solid;
+}
+
+.group-title {
+  text-align: right;
+  margin-bottom: 0.5rem;
+  font-size: 1.5rem;
+}
+
+.current {
+  background-color: rgb(206, 206, 206);
+}
+
+.taskTitleInput {
+  width: 100%;
+  border: unset;
+  border-radius: 3px;
+  margin-top: 0.5rem;
+  background-color: rgba(0, 0, 0, 0.1);
+  color: rgb(0, 0, 0);
+}
+
+.taskTitleInput:focus {
+  outline: 0;
+}
+
+.addNewTaskBtn {
+  border: unset;
+  border-radius: 3px;
+  margin-top: 0.5rem;
+  width: 100%;
+  background-color: #0000004d;
+  color: white;
+}
+
+.addTaskForm {
+  display: none;
+}
+
+.taskTitleButton {
+  border: 1px solid #329432;
+  border-radius: 3px;
+  margin-top: 0.5rem;
+  width: 50%;
+  background-color: #55b153;
+  color: white;
+}
+
+.taskTitleButton:hover {
+  background-color: #329432;
+}
+
+.newGroupForm {
+  width: 200px;
+  background-color: white;
+  padding: 0.5rem;
+  border-radius: 5px;
+  margin-right: 0.5rem;
+}
+
+.addTaskButton {
+  border: unset;
+  border-radius: 3px;
+  margin-top: 0.5rem;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.15);
+  color: #5d5d5d;
+}
+
+.addTaskButton:hover {
+  background-color: rgba(0, 0, 0, 0.25);
+}
+
+.project-nav {
+  width: 100%;
+  display: block;
+  margin-top: 1rem;
+  padding: 0.5rem 1.5rem 2.3rem 1.5rem;
+}
+
+.float {
+  float: right;
+}
+
+.project-name {
+  margin: 0;
+  padding: 0.2rem;
+  color: white;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 5px;
+}
+
+.separetor {
+  margin: 0.5rem 0.5rem 0 0.5rem;
+  border-left: black 1px solid;
+  height: 1rem;
+}
+
+.project-users {
+  margin-left: 0.5rem;
+  padding: 0.2rem;
+  color: white;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 5px;
+}
+
+.invite-user-input {
+  margin: 0;
+  padding: 0.2rem;
+  color: white;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 5px;
+  border: unset;
+}
+
+.invite-user-input::placeholder {
+  color: rgb(221, 221, 221);
+}
+
+.invite-user-btn {
+  margin: 0;
+  padding: 0.2rem;
+  color: rgb(199, 199, 199);
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  border: unset;
+}
+
+.permissions {
+  text-align: center;
+  font-size: 0.8rem;
+}
+
+.permissions label span {
+  font-size: 1rem;
+}
+
+.permissions-radio {
+  margin: 0 auto;
+  width: 100%;
+}
+
+.permissions-col label {
+  float: none;
+  margin-bottom: 1rem;
+}
+
+.permissions-col input {
+  margin-left: 0.5rem;
+}
+
+.closeBoxBtn1 {
+  display: block;
+  float: left;
+  border: unset;
+  width: 9%;
+  background: none;
+  padding-right: 1.5%;
+  border-radius: 3px;
+}
+
+.form-inline {
+  display: inline;
+}
+
+.task-icon-style {
+  color: rgb(185, 185, 185);
+  font-size: 0.8rem;
+}
+
+.task-icon-style:hover {
+  color: rgb(165, 165, 165);
+}
+
+.hide {
+  display: none;
+}
+
+.edit-task-input {
+  width: 100%;
+  border: unset;
+  padding: 2% 0.5rem 2% 0;
+  margin: 0 0 3.5% 0;
+  min-height: 5vh;
+  background-color: rgb(231, 231, 231);
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.edit-task-input:focus {
+  outline: 0;
+}
+
+.editTaskTitleBtn {
+  border: 1px solid #329432;
+  border-radius: 3px;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  width: 100%;
+  background-color: #55b153;
+  color: white;
+}
+
+.editTaskTitleBtn:hover {
+  background-color: #329432;
+}
+
+/* menu style for group action */
+
+.group-menu {
+  z-index: 1;
+  position: absolute;
+  width: 18vw;
+  font-size: 12px;
+  background-color: rgb(255, 255, 255);
+  border: 1px solid rgb(185, 185, 185);
+  padding: 0.5rem 0 0.5rem 0;
+}
+
+.menu-icons {
+  float: left;
+  border: unset;
+  width: 9%;
+  background: none;
+  padding-right: 0.5%;
+  margin-top: -0.6rem;
+}
+
+.close-menu-icon {
+  display: block;
+  float: right;
+  padding-right: 2.5% !important;
+}
+
+.close-menu-span {
+  color: #aaaaaa;
+  font-size: 20px;
+}
+
+.back-menu-span {
+  color: #aaaaaa;
+  margin-top: 0.6rem;
+}
+
+.group-menu .group-menu-hr {
+  border-top: rgb(185, 185, 185) 0.5px solid !important;
+  width: 80% !important;
+}
+
+.group-menu-header {
+  margin-bottom: 0.5rem;
+}
+
+.group-menu-header p {
+  text-align: center;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.group-menu-items {
+  display: block;
+  width: 100%;
+}
+
+.middle {
+  text-align: center;
+}
+
+.warnning {
+  width: 60%;
+  border: 1px solid rgb(180, 53, 49) !important;
+  background-color: rgb(255, 99, 71) !important;
+}
+
+.warnning:hover {
+  background-color: rgb(180, 53, 49) !important;
+}
+
+.group-menu-items-btn {
+  width: 100%;
+  border: unset;
+  background: none;
+  text-align: right;
+  padding: 0.5rem 0.5rem 0.5rem 0;
+}
+
+.group-menu-items-btn:hover {
+  background: rgb(231, 231, 231);
+}
+
+.dis:hover {
+  background: none !important;
+}
+
+.pContainer {
+  width: 99%;
+}
+
+/* no lists message style */
+
+.no-lists-div {
+  width: 100%;
+  margin-top: 5%;
+  padding: 0 44% 0 0;
+}

@@ -1,0 +1,153 @@
+@import url("https://fonts.googleapis.com/css2?family=Tajawal&display=swap");
+
+.user-sign-container {
+  display: grid;
+  place-items: center;
+  margin-top: 2.5rem;
+}
+
+.sign-form-container {
+  width: 80%;
+  display: grid;
+  grid-template-columns: minmax(25%, 50%) 1fr;
+  padding-right: 1rem;
+  text-align: right;
+  border-radius: 5px;
+  background-color: white;
+}
+
+.formImage {
+  background-image: url("https://cdn.dribbble.com/users/418188/screenshots/5775347/moonworkers_illustration_teamwork_tubik_2x.png");
+  border-radius: 5px 0 0 5px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.sign-form-title {
+  margin-right: 2.5%;
+  margin-bottom: 2.5rem;
+}
+
+label,
+.userInput {
+  transition: all 0.2s;
+  touch-action: manipulation;
+}
+
+.userInput {
+  border: 0;
+  border-bottom: 2px solid #8b8bcc;
+  font-family: inherit;
+  -webkit-appearance: none;
+  border-radius: 5px;
+  padding: 0;
+  cursor: text;
+  height: 30px;
+  width: 90%;
+}
+
+.userInput:focus {
+  outline: 0;
+  border-bottom: 2px solid #666;
+}
+
+label {
+  letter-spacing: 0.05em;
+  font-size: 1rem !important;
+  float: right;
+  position: relative;
+  top: -0.4em;
+}
+
+.userInput:placeholder-shown + label {
+  cursor: text;
+  max-width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  transform-origin: top right;
+  transform: translate(0, -1.4rem);
+  font-size: 13px;
+}
+/**
+  * By default, the placeholder should be transparent. Also, it should
+  * inherit the transition.
+  */
+.userInput::-webkit-input-placeholder {
+  opacity: 0;
+  transition: inherit;
+}
+/**
+  * Show the placeholder when the input is focused.
+  */
+.userInput:focus::-webkit-input-placeholder {
+  opacity: 1;
+}
+/**
+  * When the element is focused, remove the label transform.
+  * Also, do this when the placeholder is _not_ shown, i.e. when
+  * there's something in the input at all.
+  */
+.userInput:not(:placeholder-shown) + label,
+.userInput:focus + label {
+  transform: translate(0, -2.6rem);
+  cursor: pointer;
+}
+
+.formButton {
+  background-color: #8b8bcc;
+  color: white;
+  padding: 0 20px;
+  border: 1px solid #424274;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+.formButton:hover {
+  background-color: #424274;
+}
+
+.sign-form-forgetpass {
+  font-size: 0.7rem;
+  margin-top: -1rem !important;
+  margin-bottom: 1rem;
+}
+
+.sign-form-account {
+  display: inline-block;
+  margin-right: 0.5rem;
+}
+
+.regText {
+  margin-top: 2rem;
+}
+
+hr {
+  border-top: 1px solid rgba(0, 0, 0, 0.5) !important;
+  width: 100% !important;
+}
+
+.isDanger {
+  border-bottom: 2px solid rgb(199, 99, 99) !important;
+}
+
+.help {
+  color: rgb(199, 99, 99);
+  font-size: 12px;
+  float: right;
+  position: absolute;
+  margin-top: 0.2rem;
+}
+
+.helpSignin {
+  color: rgb(199, 99, 99);
+  font-size: 12px;
+  float: right;
+  position: absolute;
+  right: 1.7rem;
+  margin-top: 0.2rem;
+}
+
+span {
+  color: rgb(199, 99, 99);
+}

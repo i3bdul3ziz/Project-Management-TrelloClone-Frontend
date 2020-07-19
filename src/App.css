@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=Tajawal&display=swap");
+
+/* ---------NAVBAR STYLE -----------*/
+.myNavbar {
+  height: 40px;
+  width: inherit;
+}
+
+.myNav {
+  line-height: 2.3;
+  display: inline-block;
+}
+
+.myNav button {
+  color: white;
+  background-color: rgba(255, 255, 255, 0.2);
+  height: 30px;
+  margin: 0 10px;
+  border-radius: 5px;
+  border: unset;
+  font-family: "Tajawal" !important;
+}
+
+.myNav button:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.leftButtons {
+  float: left;
+  width: 33.3333%;
+}
+
+.leftButtons button {
+  float: left;
+  margin-top: 4px;
+  line-height: 1;
+}
+
+.navInputCon {
+  display: inline;
+  margin-left: 10px;
+  float: left;
+}
+.navInputIcon {
+  position: absolute;
+  top: 1.6%;
+  left: 1.2%;
+  color: white;
+  text-align: center;
+  font-size: 20px;
+}
+
+.myNav div > input {
+  border: unset !important;
+  background: rgba(255, 255, 255, 0.2) !important;
+  border-radius: 5px !important;
+  height: 30px !important;
+  width: 300px !important;
+  outline: unset !important;
+  color: white !important;
+  font-family: "Tajawal" !important;
+}
+
+.myNav div > input:hover {
+  background: rgba(255, 255, 255, 0.1) !important;
+}
+
+.myLogo {
+  text-align: center;
+  width: 33.3333%;
+  margin: 0 auto;
+}
+
+.myLogo .logoAnchor {
+  margin: 0 auto;
+  color: rgba(255, 255, 255, 0.4) !important;
+  font-size: 20px;
+}
+
+.myLogo .logoAnchor:hover {
+  color: rgba(255, 255, 255, 0.678) !important;
+}
+
+.rightButtons {
+  float: right !important;
+  text-align: right;
+  width: 33.3333%;
+}
+
+.rightButtons button {
+  margin-top: 4px;
+  line-height: 1;
+}
+
+.navIcons {
+  color: white;
+}
+
+button:focus {
+  outline: 0 !important;
+}
+
+/* NOTIFICATIONS STYLE */
+.success-message {
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  background-color: #70c56e;
+  color: #fff;
+  -webkit-transition: opacity 2s;
+  -moz-transition: opacity 2s;
+  transition: opacity 2s;
+}
+
+.error-message {
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  background-color: rgb(199, 99, 99);
+  color: #fff;
+  -webkit-transition: opacity 2s;
+  -moz-transition: opacity 2s;
+  transition: opacity 2s;
+}
+
+.fadeout {
+  opacity: 0;
+}
