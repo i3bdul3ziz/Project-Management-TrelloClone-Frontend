@@ -220,7 +220,7 @@ function DragNDropTasks(props) {
     setList([...newListCreator]);
     Axios.put(
       `https://project-management12.herokuapp.com/projects/${props.user._id}/${props.match.params.projectId}/${grpI}/${itemI}/del`,
-      {},
+      list,
       {
         headers: localStorage.getItem("token"),
       }
