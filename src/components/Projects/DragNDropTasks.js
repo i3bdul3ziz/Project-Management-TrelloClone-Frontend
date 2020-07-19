@@ -219,16 +219,21 @@ function DragNDropTasks(props) {
     newListCreator[grpI].items.splice(itemI, 1);
     setList([...newListCreator]);
     Axios.put(
-      `https://project-management12.herokuapp.com/projects/${props.user._id}/${props.match.params.projectId}/${grpI}/${itemI}/del`,
+      `https://project-management12.herokuapp.com/projects/${props.user._id}/${props.match.params.projectId}/${grpI}/${itemI}/task/del`,
       list,
       {
-        headers: localStorage.getItem("token"),
+        headers: {
+          token: localStorage.getItem("token"),
+        },
       }
     )
       .then((res) => {
+        console.log(res);
         props.history.push(`/p/${props.match.params.projectId}`);
       })
-      .catch((err) => {});
+      .catch((err) => {
+        console.log(err);
+      });
   };
 
   const handleChangeNewGroup = (e) => {
@@ -442,7 +447,7 @@ function DragNDropTasks(props) {
     let prevElement = document.getElementById(`group-menu${prevGroupIMenu}`);
     window.onclick = function (event) {
       if (groupIMenu !== null && groupIMenu !== prevGroupIMenu) {
-        if (prevGroupIMenu !== null) {
+        if (prevGroupIMenu !== null && prevElement !== null) {
           prevElement.classList.add("hide");
         }
       }
